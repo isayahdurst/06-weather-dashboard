@@ -1,0 +1,169 @@
+:root {
+    --light-blue: rgba(177, 221, 240, 0.75);
+    --light-blue-border: #10739E;
+    --dark-blue: #1BA1E2;
+    --dark-blue-border: #006EAF;
+    --yellow: #FFF2CC;
+    --yellow-border: #D6B656;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Oxygen', sans-serif;
+    background: url(../images/Sunny.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    min-width: 80vw;
+}
+
+.city-search {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: var(--light-blue);
+    border: var(--light-blue-border) 1px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.search {
+    margin: 5px 0;
+    font-size: 22px;
+    width: 100%;
+    border: 1px black solid;
+}
+
+/* Need to fix this search bar, current setup is shit. */
+.search input {
+    width: 90%;
+    font-size: 30px;
+}
+
+.search button {
+    width: 9%;
+    font-size: 30px;
+}
+
+.recent-searches ul {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recent-searches li {
+    list-style: none;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    min-width: 150px;
+    border: 2px var(--dark-blue-border) solid;
+    border-radius: 20px;
+    margin: 10px;
+    background: rgba(0,0,0,0.90) url('../images/irvine.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--dark-blue);
+    background-blend-mode: darken;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.recent-searches li span {
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Weather Summary */
+
+.weather-summary {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: var(--light-blue);
+    border: 1px var(--light-blue-border) solid;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.weather-summary .city-label {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 5px 0px;
+    background-color: #FFF2CC;
+    border: 1px var(--yellow-border) solid;
+    border-radius: 20px;
+}
+
+.summary-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 10px 10px
+}
+
+.summary-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+
+    aspect-ratio: 1 / 1;
+    background-color: var(--dark-blue);
+    border: 1px var(--dark-blue-border) solid;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.summary-item {
+    position: relative;
+}
+
+.summary-temp {
+    position: relative;
+    font-size: 64px;
+} 
+
+.summary-item span {
+    font-size: large;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.summary-precip {
+    position: relative;
+    font-size: 48px;
+}
+/* .summary-precip span {
+    font-size: medium;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+} */
+
+.summary-wind {
+    position: relative;
+    font-size: 48px;
+}
+
+.summary-humidity {
+    position: relative;
+    font-size: 48px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/998046ae41.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <section class="city-search">
+          <div class="search">
+            <input type="text" id="search" placeholder="Los Angeles, CA..." />
+            <button class="search-btn">Search</button>
+          </div>
+          <div class="recent-searches">
+            <ul>
+              <li><span>Irvine</span></li>
+              <li><span>Los Angeles</span></li>
+              <li><span>San Diego</span></li>
+              <li><span>Miami</span></li>
+              <li><span>Paris</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="weather-summary">
+          <div class="city-label">Irvine, CA</div>
+          <div class="summary-list">
+            <ul>
+              <li class="summary-temp summary-item">
+                <span
+                  ><i class="fa-solid fa-temperature-three-quarters"></i>
+                  Temperature:</span
+                >84&#8457
+              </li>
+              <li class="summary-precip summary-item">
+                <span><i class="fa-regular fa-droplet"></i> Precipitation:</span
+                >64%
+              </li>
+              <li class="summary-item summary-wind">
+                <span><i class="fa-solid fa-wind"></i> Wind Speed:</span>
+                250MPH
+              </li>
+              <li class="summary-item summary-humidity">
+                <span
+                  ><i class="fa-regular fa-droplet-percent"></i> Humidity:</span
+                >50%
+              </li>
+              <li class="summary-item">Conditions</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
