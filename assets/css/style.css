@@ -1,155 +1,163 @@
 :root {
-    --light-blue: rgba(177, 221, 240, 0.75);
-    --light-blue-border: #10739E;
-    --dark-blue: #1BA1E2;
-    --dark-blue-border: #006EAF;
-    --yellow: #FFF2CC;
-    --yellow-border: #D6B656;
+  --light-blue: rgba(177, 221, 240, 0.75);
+  --light-blue-border: #10739e;
+  --dark-blue: #1ba1e2;
+  --dark-blue-border: #006eaf;
+  --yellow: #fff2cc;
+  --yellow-border: #d6b656;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: 'Oxygen', sans-serif;
-    background: url(../images/Sunny.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Oxygen", sans-serif;
+  background: url(../images/Sunny.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
-    min-width: 80vw;
+  min-width: 50vw;
 }
 
 .city-search {
-    margin: 10px 10px;
-    padding: 10px;
-    background-color: var(--light-blue);
-    border: var(--light-blue-border) 1px solid;
-    border-radius: 20px;
-    backdrop-filter: blur(4px);
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: var(--light-blue);
+  border: var(--light-blue-border) 1px solid;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .search {
-    margin: 5px 0;
-    font-size: 22px;
-    width: 100%;
-    border: 1px black solid;
+  margin: 5px 0;
+  font-size: 22px;
+  width: 100%;
 }
 
 /* Need to fix this search bar, current setup is shit. */
 .search input {
-    width: 90%;
-    font-size: 30px;
+  width: 90%;
+  font-size: 30px;
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow-border);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .search button {
-    width: 9%;
-    font-size: 30px;
+  width: 9%;
+  font-size: 30px;
+  padding: 5px 0px;
 }
 
 .recent-searches ul {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .recent-searches li {
-    list-style: none;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    min-width: 150px;
-    border: 2px var(--dark-blue-border) solid;
-    border-radius: 20px;
-    margin: 10px;
-    background: rgba(0,0,0,0.90) url('../images/irvine.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--dark-blue);
-    background-blend-mode: darken;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 26px;
-    cursor: pointer;
+  list-style: none;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  min-width: 150px;
+  border: 2px var(--dark-blue-border) solid;
+  border-radius: 20px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.9) url("../images/irvine.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--dark-blue);
+  background-blend-mode: darken;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 .recent-searches li span {
-    backdrop-filter: blur(1px);
-    border-radius: 20px;
-    padding: 5px;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 5px;
 }
 
 /* Weather Summary */
-
 .weather-summary {
-    margin: 10px 10px;
-    padding: 10px;
-    background-color: var(--light-blue);
-    border: 1px var(--light-blue-border) solid;
-    border-radius: 20px;
-    backdrop-filter: blur(4px);
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: var(--light-blue);
+  border: 1px var(--light-blue-border) solid;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .weather-summary .city-label {
-    text-align: center;
-    font-size: 30px;
-    margin: 20px 10px;
-    padding: 5px 0px;
-    background-color: #FFF2CC;
-    border: 1px var(--yellow-border) solid;
-    border-radius: 20px;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 10px;
+  padding: 5px 0px;
+  background-color: var(--dark-blue);
+  border: var(--dark-blue-border) 1px solid;
+  border-radius: 20px;
+  /* TODO: Change font weight so city label is emphasized */
 }
 
 .summary-list ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin: 10px 10px
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 10px 10px;
 }
 
 .summary-list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
 
-    aspect-ratio: 1 / 1;
-    background-color: var(--dark-blue);
-    border: 1px var(--dark-blue-border) solid;
-    border-radius: 20px;
-    color: #fff;
+  aspect-ratio: 1 / 1;
+  background-color: var(--dark-blue);
+  border: 1px var(--dark-blue-border) solid;
+  border-radius: 20px;
+  color: #fff;
 }
 
 .summary-item {
-    position: relative;
+  position: relative;
 }
 
 .summary-temp {
-    position: relative;
-    font-size: 64px;
-} 
+  position: relative;
+  font-size: 64px;
+}
 
 .summary-item span {
-    font-size: large;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+  font-size: large;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 .summary-precip {
-    position: relative;
-    font-size: 48px;
+  position: relative;
+  font-size: 48px;
 }
 /* .summary-precip span {
     font-size: medium;
@@ -159,11 +167,17 @@ body {
 } */
 
 .summary-wind {
-    position: relative;
-    font-size: 48px;
+  position: relative;
+  font-size: 48px;
 }
 
 .summary-humidity {
-    position: relative;
-    font-size: 48px;
+  position: relative;
+  font-size: 48px;
+}
+
+section {
+  box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
 }
