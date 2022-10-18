@@ -16,3 +16,4 @@ const getAverage = (array) =>
   array.reduce((sum, value) => sum + value, 0) / array.length;
 
 console.log(`Average is: ${getAverage(testArray)}`);
+

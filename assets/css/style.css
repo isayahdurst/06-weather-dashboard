@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  min-width: 50vw;
+  min-width: 80vw;
 }
 
 .city-search {
@@ -68,13 +68,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .recent-searches li {
   list-style: none;
-  aspect-ratio: 1 / 1;
   display: flex;
-  min-width: 150px;
+  min-width: 15%;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
   border: 2px var(--dark-blue-border) solid;
   border-radius: 20px;
   margin: 10px;
@@ -83,7 +85,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--dark-blue);
-  background-blend-mode: darken;
+  
+  /* background-blend-mode: darken; */
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -130,7 +133,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 15%;
 
   aspect-ratio: 1 / 1;
   background-color: var(--dark-blue);
@@ -157,27 +160,26 @@ body {
 
 .summary-precip {
   position: relative;
-  font-size: 48px;
+  font-size: 32px;
 }
-/* .summary-precip span {
-    font-size: medium;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-} */
 
 .summary-wind {
   position: relative;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .summary-humidity {
   position: relative;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 section {
   box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 10px 39px 0px rgba(0, 0, 0, 0.75);
+}
+
+.summary-condition {
+  position: relative;
+  font-size: 64px;
 }
