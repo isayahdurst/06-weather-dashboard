@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Silkscreen&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Rubik&family=Silkscreen&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/998046ae41.js"
       crossorigin="anonymous"
@@ -22,7 +19,7 @@
       <div class="left">
         <section class="city-search">
           <div class="search">
-            <input type="text" id="search" placeholder="Los Angeles, CA..." />
+            <input type="text" id="search" placeholder="Enter a city name..." />
             <button class="search-btn">Search</button>
           </div>
           <div class="recent-searches">
@@ -32,47 +29,72 @@
               <li><span>San Diego</span></li>
               <li><span>Miami</span></li>
               <li><span>Paris</span></li>
+              <li><span>Irvine</span></li>
+              <li><span>Los Angeles</span></li>
+              <li><span>San Diego</span></li>
+              <li><span>Miami</span></li>
+              <li><span>Paris</span></li>
             </ul>
           </div>
         </section>
         <section class="weather-summary">
-          <div class="city-label">Irvine, CA</div>
+          <div class="city-label">
+            <div><span class="city-name">Irvine</span> ~ <span class="city-label-weekday">Monday</span></div>
+          </div>
           <div class="summary-list">
             <ul>
               <li class="summary-temp summary-item">
                 <span
                   ><i class="fa-solid fa-temperature-three-quarters"></i>
                   Temperature:</span
-                >84&#8457
+                ><div id="summary-temp-val">84 &#8457 </div>
               </li>
               <li class="summary-precip summary-item">
                 <span><i class="fa-regular fa-droplet"></i> Precipitation:</span
-                >64%
+                ><div class="summary-precip-val">64%</div>
               </li>
               <li class="summary-item summary-wind">
                 <span><i class="fa-solid fa-wind"></i> Wind Speed:</span>
-                25 MPH
+                <div class="summary-wind-val">25 MPH</div>
               </li>
               <li class="summary-item summary-humidity">
                 <span
                   ><i class="fa-regular fa-droplet-percent"></i> Humidity:</span
-                >50%
+                ><div class="summary-humidity-val">50%</div>
               </li>
-              <li class="summary-item summary-condition"><span>Condition:</span><i class="fa-solid fa-sun"></i></li>
+              <li class="summary-item summary-condition"><span>Condition:</span><img id="summary-condition-img" src="" alt=""></li>
             </ul>
           </div>
         </section>
         <!-- Display next few days, horizontal scroll by hour, (NEXT) -->
-        <section class="time-period">
-          <ul>
-            <li>
-              <div class="time">9am</div>
-              <div class="time-period-temp">84F</div>
-            </li>
+        <section class="time-period weather-summary">
+          <ul id="forecast-list">
+            <!-- <li id="day1">
+              <div class="card-wrapper">
+                <div class="time">Sunday</div>
+                <div class="time-period-condition"><img></div>
+                <div class="time-period-temp">84F</div>
+                <div class="time-period-precipitation">64%</div>
+                <div class="time-period-wind-speed">36MPH</div>
+                <div class="time-period-humidity">50%</div>
+              </div>
+            </li> -->
           </ul>
         </section>
       </div>
     </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal-title">Please Select a City:</h1>
+      <ul class = 'search-results'>
+        <!-- <li>Miami, Florida, US</li>
+        <li>Miami, Texas, US</li>
+        <li>Miami, Oklahoma, US</li>
+        <li>Miami, West Virginia, US</li> -->
+      </ul>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
