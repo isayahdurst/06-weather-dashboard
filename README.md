@@ -4,17 +4,17 @@ This application allows a user to search for a specific city and view the curren
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -44,11 +44,11 @@ THEN I am again presented with current and future conditions for that city
 
 ### Screenshot
 
-- Schedule Preview [Schedule](./assets/images/Screenshot.jpg?raw=true "Screenshot")
+-   Weather App Preview [Weather](./assets/images/Screenshot.JPG?raw=true 'Screenshot')
 
 ### Links
 
-- Live Site URL: [Github](https://isayahdurst.github.io/06-weather-dashboard)
+-   Live Site URL: [Github](https://isayahdurst.github.io/06-weather-dashboard)
 
 ## My process
 
@@ -56,10 +56,10 @@ When I started the project, I began working with the OpenWeather API and making 
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS
-- JavaScript
-- Luxon
+-   Semantic HTML5 markup
+-   CSS
+-   JavaScript
+-   Luxon
 
 ### What I learned
 
@@ -71,7 +71,7 @@ If I were to continue development, I would certainly improve the UI of this appl
 
 ## Author
 
-- Github - [@isayahdurst](https://www.github.com/isayahdurst)
-- Twitter - [@isayahdurst](https://www.twitter.com/isayahdurst)
+-   Github - [@isayahdurst](https://www.github.com/isayahdurst)
+-   Twitter - [@isayahdurst](https://www.twitter.com/isayahdurst)
 
 ## Acknowledgments
